@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     sidekiq-queue-pause (0.1.1)
-      sidekiq (>= 6.0, < 7.0)
+      sidekiq (>= 6.0)
 
 GEM
   remote: https://rubygems.org/
