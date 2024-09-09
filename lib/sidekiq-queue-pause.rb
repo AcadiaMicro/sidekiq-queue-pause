@@ -18,7 +18,7 @@ module Sidekiq
       end
 
       def pause(queue, pkey = nil)
-        Sidekiq.redis { |it| it.set rkey(queue, pkey), "true" }
+        Sidekiq.redis { |it| it.set rkey(queue, pkey), 1 }
       end
 
       def unpause(queue, pkey = nil)
